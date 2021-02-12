@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		1BA5EB4B25D40F4E008DCA55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5EB4A25D40F4E008DCA55 /* AppDelegate.swift */; };
 		1BA5EB4D25D40F4E008DCA55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5EB4C25D40F4E008DCA55 /* SceneDelegate.swift */; };
-		1BA5EB4F25D40F4E008DCA55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5EB4E25D40F4E008DCA55 /* ViewController.swift */; };
+		1BA5EB4F25D40F4E008DCA55 /* DayFinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5EB4E25D40F4E008DCA55 /* DayFinderViewController.swift */; };
 		1BA5EB5225D40F4E008DCA55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA5EB5025D40F4E008DCA55 /* Main.storyboard */; };
 		1BA5EB5425D40F52008DCA55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA5EB5325D40F52008DCA55 /* Assets.xcassets */; };
 		1BA5EB5725D40F52008DCA55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA5EB5525D40F52008DCA55 /* LaunchScreen.storyboard */; };
+		1BA5EB6525D412D1008DCA55 /* TempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5EB6425D412D1008DCA55 /* TempViewController.swift */; };
+		1BA5EB6825D412F6008DCA55 /* ApperianceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5EB6725D412F6008DCA55 /* ApperianceViewController.swift */; };
+		1BA5EB6B25D4131A008DCA55 /* AppInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5EB6A25D4131A008DCA55 /* AppInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1BA5EB4725D40F4E008DCA55 /* ConverterPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConverterPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA5EB4A25D40F4E008DCA55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BA5EB4C25D40F4E008DCA55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1BA5EB4E25D40F4E008DCA55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1BA5EB4E25D40F4E008DCA55 /* DayFinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayFinderViewController.swift; sourceTree = "<group>"; };
 		1BA5EB5125D40F4E008DCA55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BA5EB5325D40F52008DCA55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BA5EB5625D40F52008DCA55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BA5EB5825D40F52008DCA55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BA5EB6425D412D1008DCA55 /* TempViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempViewController.swift; sourceTree = "<group>"; };
+		1BA5EB6725D412F6008DCA55 /* ApperianceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApperianceViewController.swift; sourceTree = "<group>"; };
+		1BA5EB6A25D4131A008DCA55 /* AppInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		1BA5EB4925D40F4E008DCA55 /* ConverterPlus */ = {
 			isa = PBXGroup;
 			children = (
-				1BA5EB4A25D40F4E008DCA55 /* AppDelegate.swift */,
-				1BA5EB4C25D40F4E008DCA55 /* SceneDelegate.swift */,
-				1BA5EB4E25D40F4E008DCA55 /* ViewController.swift */,
-				1BA5EB5025D40F4E008DCA55 /* Main.storyboard */,
+				1BA5EB5F25D41256008DCA55 /* AppDelegate */,
+				1BA5EB6025D41268008DCA55 /* Controller */,
+				1BA5EB6225D41278008DCA55 /* Views */,
 				1BA5EB5325D40F52008DCA55 /* Assets.xcassets */,
-				1BA5EB5525D40F52008DCA55 /* LaunchScreen.storyboard */,
 				1BA5EB5825D40F52008DCA55 /* Info.plist */,
 			);
 			path = ConverterPlus;
+			sourceTree = "<group>";
+		};
+		1BA5EB5F25D41256008DCA55 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1BA5EB4A25D40F4E008DCA55 /* AppDelegate.swift */,
+				1BA5EB4C25D40F4E008DCA55 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		1BA5EB6025D41268008DCA55 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1BA5EB4E25D40F4E008DCA55 /* DayFinderViewController.swift */,
+				1BA5EB6425D412D1008DCA55 /* TempViewController.swift */,
+				1BA5EB6725D412F6008DCA55 /* ApperianceViewController.swift */,
+				1BA5EB6A25D4131A008DCA55 /* AppInfoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1BA5EB6225D41278008DCA55 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1BA5EB5025D40F4E008DCA55 /* Main.storyboard */,
+				1BA5EB5525D40F52008DCA55 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BA5EB4F25D40F4E008DCA55 /* ViewController.swift in Sources */,
+				1BA5EB6525D412D1008DCA55 /* TempViewController.swift in Sources */,
+				1BA5EB6825D412F6008DCA55 /* ApperianceViewController.swift in Sources */,
+				1BA5EB4F25D40F4E008DCA55 /* DayFinderViewController.swift in Sources */,
 				1BA5EB4B25D40F4E008DCA55 /* AppDelegate.swift in Sources */,
+				1BA5EB6B25D4131A008DCA55 /* AppInfoViewController.swift in Sources */,
 				1BA5EB4D25D40F4E008DCA55 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
